@@ -1,0 +1,101 @@
+<html>
+
+<head>
+  <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+  <link rel="stylesheet" href="style1.css" />
+</head>
+
+<body>
+  <h1>My first web page</h1>
+  <h2>What this is</h2>
+  <p>Welcome to <i>my first webpage</i>. I created this webpage without
+    the asistance of a webpage editor. Just my little
+    text editor and a keen <b>UNDERSTANDING OF HTML</b>
+  </p>
+  <h2>What this is</h2>
+  <ul>
+    <li>To lear HTML</li>
+    <li>List Element
+      <ol>
+        <li>Home</li>
+        <li>FAQ</li>
+        <li>Contact</li>
+        <li>About</li>
+      </ol>
+    <li>Here I have created ordered and unordered list</li>
+    </li>
+  </ul>
+  <h2>ZeusLearning.com</h2>
+  <a href="https://zeuslearning.com" target="_blank">This link will open zeuslearning.com in new tab</a>
+  <h2>On click of following image navigate to Google.com</h2>
+  <a href="https://google.com" target="_blank"><img src="google.png" alt="HTML tutorial"></a>
+  <h3>Some random table</h3>
+  <table>
+    <tr>
+      <td>Row 1, cell 1</td>
+      <td>Row 1, cell 2</td>
+      <td>Row 1, cell 3</td>
+    </tr>
+    <tr>
+      <td>Row 2, cell 1</td>
+      <td>Row 2, cell 2</td>
+      <td>Row 2, cell 3</td>
+    </tr>
+    <tr>
+      <td>Row 3, cell 1</td>
+      <td>Row 3, cell 2</td>
+      <td>Row 3, cell 3</td>
+    </tr>
+    <tr>
+      <td>Row 4, cell 1</td>
+      <td>Row 4, cell 2</td>
+      <td>Row 4, cell 3</td>
+    </tr>
+  </table>
+  <h3>Some random table</h3>
+  <form name="myForm" action="" onsubmit="validateForm(this.form)" method="get">
+    <i><b>NOTE:</b></i> It looks the part, but won't do a anything. <br>
+    <label for="">Name:</label><br>
+    <input type="text" name="u_name" placeholder="Your name"> <br>
+    <label for="">Comments:</label> <br>
+    <textarea name="comment" name="" id="" cols="30" rows="10" placeholder="Your comments"></textarea> <br>
+    <label for="">Are you:</label> <br>
+    <input type="radio" id="male" name="gender" value="Male">
+    <label for="male">MALE</label><br>
+    <input type="radio" id="female" name="gender" value="Female">
+    <label for="female">FEMALE</label><br>
+    <button type="submit">Submit Query</button>
+  </form>
+  <script>
+    function validateForm(form) {
+      let name = document.forms["myForm"]["u_name"].value;
+      let comment = document.forms["myForm"]["comment"].value;
+      let gender = document.forms["myForm"]["gender"];
+
+      if (name == "" && comment == "") {
+        console.log("Hello");
+        alert("Name and Commnet must be filled out");
+        return;
+      }
+      else if(name == "")
+      {
+        alert("Name must be filled out");
+        return;
+      }
+      else if(comment=="")
+      {
+        alert("Comment must be filled out");
+        return;
+      }
+      for (var i=0;i<radio.length;i++) 
+      {
+       if (form.gender[0].checked == false  &&  form.gender[1].checked == false)
+        alert("Gender is necessary to be filled");
+        return;
+      }
+    }
+  </script>
+</body>
+
+</html>
